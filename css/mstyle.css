@@ -12,11 +12,9 @@ header {
 	position: absolute;
 	top: -4.5vh;
 	left: 0;
-	color: #669d34;
-	width: 100vw;	    
+	width: 100vw;
 }
 h1 {
-	font-size: 7vh;
 	text-align: center;
 }
 .dropbtn {
@@ -75,13 +73,24 @@ h1 {
 	margin: 6px 0;
 	box-shadow: 1px 1px 2px black, 0 0 17px white, 0 0 5px white;
 }
+#text {
+	background: #1a1a1a;
+	color: white;
+	text-align: justify;
+	width: 90vw;
+	height: 80vh;
+	overflow: scroll;
+	left: 4.5vw;
+	position: absolute;
+	top: 15vh;
+}
 @media screen and (orientation:landscape) {
     body {
     	overflow-x: hidden; 
     	overflow-y: scroll;
 		width: 100vw;
-		height: 96vh;	  
-    }
+		height: 96vh;  
+   	}
     header {
     	position: absolute;
 		top: -3.7vw;
@@ -90,5 +99,5 @@ h1 {
     h1 {
 		font-size: 6vw;
 		text-align: center;
-	}	
+	}
 }
