@@ -82,7 +82,7 @@ h1 {
 	height: 80vh;
 	overflow: scroll;
 	position: absolute;
-	top: 15vh;
+	top: 12vh;
 	font-size: 4vw;
 	left: 2.5vw;
 }
@@ -136,6 +136,28 @@ h2, .field-block {
 #loader {
 	display: none;
 }
+#menu{
+	position: absolute;
+	top: 14vh;
+	width: 100vw;
+	text-decoration: none;
+
+}
+.list {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
+}
+li a {
+	text-decoration: none;
+	color: white;
+	font-size: 10vw;
+}
+
+
+
 @media screen and (orientation:landscape) {
     body {
     	overflow-x: hidden; 
@@ -164,4 +186,7 @@ h2, .field-block {
 	.check-text {
 		vertical-align: middle;
 	}
-}
+	li a {
+		font-size: 5vw;
+	}
+

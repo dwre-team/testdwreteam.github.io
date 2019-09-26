@@ -88,6 +88,25 @@ h1 {
 	top: 15vh;
 	font-size: 4vw;
 }
+#menu{
+	position: absolute;
+	top: 14vh;
+	width: 100vw;
+	text-decoration: none;
+
+}
+.list {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
+}
+li a {
+	text-decoration: none;
+	color: white;
+	font-size: 10vw;
+}
 
 @media screen and (orientation:landscape) {
     body {
@@ -108,4 +127,11 @@ h1 {
 	#text {
 		top: 16vh;
 	}
+	#menu {
+		top: 17vh;
+	}
+	li a {
+		font-size: 5vw;
+	}
+
 }

@@ -24,7 +24,7 @@ header {
     left: 1vw;
     width: 100%;
     transition: 0.5s, transform: 5s;
-    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+    text-shadow: 1px 1px 2px black;
   }
 @keyframes example {
     from {opacity: 0}
@@ -66,27 +66,37 @@ a:hover {
     text-align: left;
     top: 20vh;
     left: 10vw;
-    background: #1a1a1a;
+    background: rgba(26, 26, 26,0.1);
     color: white;
-    font-size: 2vw;
+    font-size: 1.2vw;
     width: 79vw;
-    height: 55vh;
-    overflow: scroll;
+    height: 57vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     transition: 0.5s, transform: 5s;
+
+}
+.list {
+    display: flex;
+    position: absolute;
+    bottom: 15vh;
+    float: left;
+    left: 22vw;
 }
 .container {
     max-width: 38vw;
     align-content: center;
     float: left;
 }
-h2, .field-block {
-    margin-top: 1vw;
+h3, .field-block {
+      padding-top: 1.5vh;
 }
 
 .field-block label, .field-block .field {
     display: block;
     width: 35vw;
     margin-left: 3px;
+
 }
 
 .field-block label {
@@ -94,8 +104,8 @@ h2, .field-block {
     font-weight: bold;
 }
 .field-block .field {
-    font-size: 16px;
-    padding: 8px 12px;
+    font-size: 12px;
+    padding: 6px 12px;
     line-height: 1.5;
     border: 1px solid #ccc;
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
@@ -128,5 +138,12 @@ h2, .field-block {
 .info {
     float: right;
     max-width: 37vw;
-
 }
+#overflow td {
+    border-right: 3px solid white;
+}
+#overflow a {
+    font-size: 1.2vw;
+}
+
+
