@@ -1,0 +1,122 @@
+body {
+  overflow: hidden;
+  align-content: center;
+  background-color: #1a1a1a;
+	position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Exo', sans-serif;
+  align-self: center;
+  }
+svg {
+  width: 100%; 
+  height: 100%;
+  margin: 0; 
+  padding: 0;
+}
+ header {
+  display: block;
+  animation-name: example;
+  animation-duration: 5s;  
+  animation-delay: 0;
+  position: absolute;
+  top: -2vh;
+  left: -37vw;
+  color: white;
+  width: 100%;
+  transition: 0.5s, transform: 5s;
+    
+}
+@keyframes example {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+h1 {
+  font-size: 3.7vw;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+}
+h4 {
+  font-size: 1.5vw;
+  text-align: center;
+  margin: -2.5vw;
+}
+div {
+  animation-name: example;
+  animation-duration:5s;  
+  animation-delay: 0;
+  position: absolute;
+  width: 100%;
+  align-content: center;
+}
+a {
+  position: absolute;
+  font-size: 2.7vw; 
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  transition: 0.5s, transform: 5s;
+  text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+  text-decoration: none;
+}
+#product {
+  color: #669d34; 
+  bottom: 92vh;
+  right: 32%;
+}
+#outsours {
+  color: #ffff66; 
+  bottom: 46vh; 
+  left: -6%; 
+  transform: rotate(-90deg);
+}
+#outstaff {
+  color: #0000ff; 
+  bottom: 20vh; 
+  left: 91%; 
+  transform: rotate(90deg);
+}
+#PDS {
+  color: #ff5050; 
+  bottom: 5vh; 
+  right: 43%;
+  text-overflow: hidden; 
+  white-space: nowrap;
+}
+#list {
+  left: 85%; 
+}
+#list a {
+  font-size: 2.2vw;
+  color: #808080;
+  text-decoration: underline;
+} 
+.about { 
+  bottom: 75vh;
+}
+.contacts {
+  bottom: 68vh; 
+}
+.blog {
+  bottom: 56vh;
+}
+#overflow {
+  display: block;
+  animation-name: example;
+  animation-duration: 5s;  
+  animation-delay: 0;
+  position: relative;
+  text-align: left;
+  top: 30vh;
+  left: -75vw;
+  background: white;
+  color: white;
+  font-size: 1.5vw;
+  width: 50vw;
+  height: 54vh;
+  overflow: auto;
+  overflow-x: hidden;
+  transition: 0.5s, transform: 5s;
+}

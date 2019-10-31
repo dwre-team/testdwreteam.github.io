@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>#contacts</title>
+	<meta http-equiv ="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+	<link href="css\style.css" rel="stylesheet">
+</head>
+<body>
+	<svg id="svg1" version="1" viewBox="0 0 1419 731" preserveAspectRatio="none">      
+  
+		<path id="path1" fill="none" stroke ="#808080" stroke-width="4.5px" stroke-dasharray= "2000" stroke-dashoffset="0"  
+        	d="M 0,650 L 510,650 630,731 750,580 900,650 1419,650">
+    		<animate id="p" attributeName="stroke-dashoffset" values="2000; 0" dur="5s" repeatCount="1"  fill="freeze"  calcMode="linear"/>
+		</path>
+	</svg>
+	
+	<header style="color: #808080; text-decoration: underline;">
+		<h1>#contacts</h1>
+	</header>
+	<div class="home">
+		<a href="index.html"><span style="color: #669d34">dwre</span><span style="color:white">Team</span></a>
+	</div>
+	<div id="overflow" style="top: 14vh; height: 73vh">
+		<div class="container">
+			<h3>Post your message and we will contact you</h3>
+			<form id="contactForm" action="handler.php" method="post">
+				<div class="field-block">
+					<label for="name">Name:</label>
+					<input id="name" class="field" name="name" required type="text" placeholder="John Doe">
+				</div>
+				<div class="field-block">
+					<label for="email">E-mail:</label>
+					<input id="email" class="field" name="email" required type="email" placeholder="example@email.com">
+				</div>
+				<div class="field-block">
+					<label for="phone">Phone number:</label>
+					<input id="phone" class="field" name="phone" required type="text" placeholder="+380 (00) 000-00-00">
+				</div>
+				<div class="field-block">
+					<label for="message">Message:</label>
+					<textarea id="message" class="field" required name="message" rows="7"></textarea>
+				</div>
+				<div class="field-block">
+					<input id="check" name="check" type="checkbox">
+					<span class="check-text">I agree to use of my data</span>
+				</div>
+				<button id="button" class="button" type="submit">Send</button>
+				<div class="result">
+					<span id="answer"></span>
+					<span id="loader"><img src="images/loader.gif" alt=""></span>
+				</div>
+			</form>
+		</div>
+		<div class="info">
+			<h3>Or you can contact with us by yorself</h3>
+			<p>
+				<br>
+					<span style="text-decoration: underline;">Phone number:</span>
+					+380938485935
+			</p>
+			<p>
+					<span style="text-decoration: underline;">e-mail:</span>
+					okotelevets31@gmail.com
+				<br>
+			</p>
+			<p>
+					<span style="text-decoration: underline;">Office adress:</span> 79000, Lviv, Morshynska st., 3, Ukraine
+			</p>
+			<div style="overflow:hidden;width: 500px;position: relative;"><iframe width="500" height="260" src="https://maps.google.com/maps?width=500&amp;height=400&amp;hl=en&amp;q=Morshynska%2C%203%20%2CLviv%2C%20Ukraine+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/en/"></a> & <a href="https://iamsterdamcard.it"></a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+		</div>
+	</div>
+	
+</body>
+</html>
+
